@@ -1,4 +1,4 @@
-# eslint-plugin-import-checker
+# eslint-plugin-path-control
 
 This is a plugin for checking and fixing paths according to the FSD architecture
 
@@ -10,20 +10,20 @@ You'll first need to install [ESLint](https://eslint.org/):
 npm i eslint --save-dev
 ```
 
-Next, install `eslint-plugin-import-checker`:
+Next, install `eslint-plugin-path-control`:
 
 ```sh
-npm install eslint-plugin-import-checker --save-dev
+npm install eslint-plugin-path-control --save-dev
 ```
 
 ## Usage
 
-Add `import-checker` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
+Add `path-control` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
 
 ```json
 {
     "plugins": [
-        "import-checker"
+        "path-control"
     ]
 }
 ```
@@ -34,7 +34,7 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
     "rules": {
-        "import-checker/rule-name": 2
+        "path-control/fsd-path": 2
     }
 }
 ```
